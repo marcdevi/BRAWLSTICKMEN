@@ -1,0 +1,6 @@
+.joueur{
+    height: 250px;
+    width: 250px;
+    max-width: 250px;
+    background: url("img/sprite/walk.png") 0px 0px;
+}

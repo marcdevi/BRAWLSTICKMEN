@@ -1,0 +1,15 @@
+{
+    "name": "holyfriday/brawlstickmen",
+    "authors": [
+        {
+            "name": "marcdevi",
+            "email": "rikemarcdevy.ngbehin@hetic.net"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "require": {}
+}
