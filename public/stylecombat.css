@@ -1,0 +1,31 @@
+*{
+    box-sizing: border-box;
+}
+
+.menu-top {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 1% 2%;
+    
+}
+
+.jr1-vie {
+    height: 20px;
+    width: 100%;
+    background-color: green;
+}
+
+.timer{
+width: 100px;
+height: 50px;
+background-color: yellow;
+flex-shrink: 0;
+}
+
+.jr1-vie2 {
+    position: relative;
+    height: 20px;
+    width: 100%;
+}
