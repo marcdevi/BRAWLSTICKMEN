@@ -1,3 +1,17 @@
+<?php
+session_start();
+
+require '../vendor/autoload.php';
+
+use App\Database;
+
+$db = new Database('brawlstickmen');
+
+require '../app/models/function.php';
+require '../app/controllers/menu.php';
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,35 +23,35 @@
 </head>
 <body>
     <header>
-        <h1>Brawlstickmen</h1>
+        <h1 style="font-family: droog, sans-serif;">Brawlstickmen</h1>
         <div class="nv">
             <div>
                 <img src="img/Vector 21.svg" alt="" height="50%">
                 <div>
-                <p style="font-size: 32px;">26</p>
+                <p style="font-size: 32px;font-family: brevia, sans-serif;font-weight: 900;font-style: normal;">26</p>
                 </div>
                 <img src="" alt="">
             </div>
             <div>
                 <img src="img/Clazssement.png" alt="" height="50%">
-                <p style="font-size: 32px;">CLASSEMENT</p>
+                <p style="font-size: 32px;font-family: brevia, sans-serif;font-weight: 900;font-style: normal;">CLASSEMENT</p>
             </div>
         </div>
     </header>
     <main>
         <section class="left">
             <div>
-                <img src="img/coFFRE.png" alt="">
-                <p>BOUTIQUE</p>
+                <a href="boutique.php"><img src="img/coFFRE.png" alt="">
+                <p style="color:black;text-align:center;font-family: brevia, sans-serif;font-weight: 900;font-style: normal;">BOUTIQUE</p></a>
             </div>
             <div>
-                <img src="img/Inventaire.png" alt="">
-                <p>INVENTAIRE</p>
+            <a href="inventaire.php"><img src="img/Inventaire.png" alt="">
+                <p style="color:black;text-align:center;font-family: brevia, sans-serif;font-weight: 900;font-style: normal;">INVENTAIRE</p></a>
             </div>
         </section>
         <section class="right">
-            <button class="niveau">NIVEAU</button>
-            <button class="jouer">JOUER</button>
+            <a href="#"><button class="niveau" style="font-family: brevia, sans-serif;font-weight: 900;font-style: normal;padding: 60px 90px;margin: 30px 0%;font-family: brevia, sans-serif;font-weight: 900;font-style: normal;color:white">NIVEAU</button></a>
+            <a href="combat.php"><button style="padding: 60px 90px;margin: 30px 0%;font-family: brevia, sans-serif;font-weight: 900;font-style: normal;" class="jouer">JOUER</button></a>
         </section>
     </main>
     <footer></footer>

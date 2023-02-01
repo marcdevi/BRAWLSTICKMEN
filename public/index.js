@@ -71,22 +71,24 @@ const enemy = new Fighter({
         x: 0,
         y: 0
     },
-    color: 'blue',
+    imageSrc: 'img/sprite/idle2.png',
+    frameMax: 16,
+    scale: 0.75,
     offset: {
         x: -50,
-        y: 0
+        y: 15
     },
     sprites: {
         idle: {
-            imageSrc: 'img/sprite/idle.png',
+            imageSrc: 'img/sprite/idle2.png',
             frameMax: 16
         },
         run: {
-            imageSrc: 'img/sprite/run.png',
+            imageSrc: 'img/sprite/run2.png',
             frameMax: 16
         },
         attack1: {
-            imageSrc: 'img/sprite/middlekick.png',
+            imageSrc: 'img/sprite/middlekick2.png',
             frameMax: 12
         }
     }
@@ -122,7 +124,7 @@ function animate() {
     background.update()
     //shop.update()
     player.update()
-    //enemy.update()
+    enemy.update()
 
 
     player.velocity.x = 0
@@ -142,8 +144,10 @@ function animate() {
     }
 
     //mouvement joueur 2
+    enemy.switchSprite('idle')
     if (keys.ArrowLeft.pressed && enemy.lastkey === 'ArrowLeft') {
         enemy.velocity.x = -5
+        enemy.switchSprite('run')
     } else if (keys.ArrowRight.pressed && enemy.lastkey == 'ArrowRight') {
         enemy.velocity.x = 5
     }
@@ -206,7 +210,7 @@ window.addEventListener('keydown', (event) => {
             enemy.velocity.y = -20
             break;
         case 'ArrowDown':
-            enemy.isAttacking = true
+            enemy.attack()
             break;
 
     }

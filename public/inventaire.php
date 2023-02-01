@@ -1,3 +1,17 @@
+<?php
+session_start();
+require '../vendor/autoload.php';
+
+use App\Database;
+
+$db = new Database('brawlstickmen');
+
+require '../app/models/function.php';
+require '../app/controllers/inventaire.php';
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 

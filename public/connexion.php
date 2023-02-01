@@ -7,7 +7,7 @@ use App\Database;
 $db = new Database('brawlstickmen');
 
 require '../app/models/function.php';
-require '../app/controllers/addjoueur.php';
+require '../app/controllers/joueur.php';
 
 
 ?>
@@ -31,20 +31,12 @@ require '../app/controllers/addjoueur.php';
                 <input type="text" name="nom">
             </div>
             <div>
-                <h3>prenom</h3>
-                <input type="text" name="prenom">
-            </div>
-            <div>
-                <h3>sexe</h3>
-                <input type="text" name="sexe">
-            </div>
-            <div>
                 <h3>Mots de passe</h3>
                 <input type="password" name="password">
             </div>
             <button type="submit">envoyer</button>
         </form>
-    <a href="connexion.php"><p>SE CONNECTER</p></a>
+    <a href="index.php"><p>S'INSCRIRE   </p></a>
     </section>
     
 </body>
