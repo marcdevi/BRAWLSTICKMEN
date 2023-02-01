@@ -43,7 +43,7 @@
             </div>
             <div style="display: block;justify-content: center;align-items: center;">
                 <div>
-                    <img src="img/itemsbq1.png" alt="">
+                    <img src="img/itemsbq2.png" alt="">
                 </div>
                 <h4 style="text-align: center;font-size: 26px;">PISTOLET LAZER</h4>
                 <div style="display: flex;justify-content: center;gap: 20px;">

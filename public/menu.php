@@ -21,7 +21,7 @@ require '../app/controllers/menu.php';
     <link rel="stylesheet" href="style.css">
     <title>BRAWLSTICKMEN</title>
 </head>
-<body>
+<body class="body-menu">
     <header>
         <h1 style="font-family: droog, sans-serif;">Brawlstickmen</h1>
         <div class="nv">
@@ -38,7 +38,7 @@ require '../app/controllers/menu.php';
             </div>
         </div>
     </header>
-    <main>
+    <main class="main-menu">
         <section class="left">
             <div>
                 <a href="boutique.php"><img src="img/coFFRE.png" alt="">
